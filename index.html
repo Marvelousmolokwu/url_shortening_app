@@ -26,148 +26,183 @@
   <body>
     <div class="font-body overflow-x-hidden mt-8">
       <div class="">
-        <div class="w-[350px] mx-auto">
-          <div class="flex justify-between">
-            <img src="images/logo.svg" alt="logo" />
-            <div
-              class="text-GrayishViolet cursor-pointer menu-bar active:text-Cyan hover:text-Cyan focus:text-Cyan"
-            >
-              <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <div class="w-[350px] mx-auto md:w-[600px] lg:w-[850px]">
+          <div class="md:flex">
+            <div class="sm:flex sm:justify-between items-center">
+              <img class="md:h-10" src="images/logo.svg" alt="logo" />
+              <div
+                class="text-GrayishViolet cursor-pointer menu-bar active:text-Cyan hover:text-Cyan md:hidden"
+              >
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
+            <nav
+              id="nav"
+              class="bg-DarkViolet hidden text-white font-bold text-center p-6 rounded-lg mt-6 -mb-80 z-10 text-[18px] transition-all ease-out duration-500 md:w-[350px] md:flex md:bg-transparent md:text-black md:my-0 md:p-0 md:pt-3 md:text-[16px]"
+            >
+              <ul
+                class="flex flex-col gap-6 md:flex md:flex-row md:gap-7 md:ml-2 lg:flex lg:flex-row lg:justify-between"
+              >
+                <ul class="flex flex-col gap-3 md:flex md:flex-row">
+                  <li class="">
+                    <button
+                      href="#"
+                      class="hover:bg-Cyan active:bg-Cyan rounded-full w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent"
+                    >
+                      Features
+                    </button>
+                  </li>
+                  <li class="">
+                    <button
+                      href="#"
+                      class="hover:bg-Cyan active:bg-Cyan rounded-full w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent"
+                    >
+                      Pricing
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="hover:bg-Cyan active:bg-Cyan rounded-full w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent"
+                      href="#"
+                    >
+                      Resources
+                    </button>
+                  </li>
+                </ul>
+                <hr />
+                <ul class="flex flex-col gap-3 md:flex md:flex-row lg:ml-52">
+                  <li>
+                    <button
+                      class="hover:bg-Cyan active:bg-Cyanhover:bg-Cyan active:bg-Cyan rounded-full w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent"
+                      href="#"
+                    >
+                      Login
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="hover:bg-Cyan active:bg-Cyan rounded-full w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent"
+                      href="#"
+                    >
+                      Sign~up
+                    </button>
+                  </li>
+                </ul>
+              </ul>
+            </nav>
           </div>
-          <nav
-            id="nav"
-            class="bg-DarkViolet hidden text-white font-bold text-center p-6 rounded-lg mt-6 -mb-80 z-10 text-[18px] transition-all ease-out duration-500"
-          >
-            <ul class="flex flex-col gap-6">
-              <ul class="flex flex-col gap-3">
-                <li class="">
-                  <button
-                    href="#"
-                    class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3"
-                  >
-                    Features
-                  </button>
-                </li>
-                <li class="">
-                  <button
-                    href="#"
-                    class="hover:bg-Cyan active:bg-Cyan rounded-full px-11 py-3"
-                  >
-                    Pricing
-                  </button>
-                </li>
-                <li class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3">
-                  <button href="#">Resources</button>
-                </li>
-              </ul>
-              <hr />
-              <ul class="flex flex-col gap-3">
-                <li class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3">
-                  <button href="#">Login</button>
-                </li>
-                <li class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3">
-                  <button href="#">Sign Up</button>
-                </li>
-              </ul>
-            </ul>
-          </nav>
         </div>
 
         <div
-          class="text-center mx-auto flex flex-col justify-center items-center mb-11"
+          class="text-center mx-auto flex flex-col justify-center items-center mb-11 lg:text-left"
         >
-          <div class="ml-72 w-[30rem] -z-10">
-            <img class="-z-10" src="images/illustration-working.svg" alt="" />
-          </div>
-          <h1 class="font-extrabold text-[40px] leading-10 mt-6">
-            More than just<br />
-            shorter links
-          </h1>
-          <p class="w-[350px] pt-4 text-GrayishViolet">
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
-          </p>
-
-          <button
-            class="bg-Cyan text-white rounded-full font-bold px-11 py-3 mt-6"
-          >
-            Get Started
-          </button>
-          <div
-            class="bg-DarkViolet bg-bgmobile w-[320px] h-[200px] mx-auto p-6 rounded-md z-10 -mb-40 my-20"
-          >
-            <form class="flex flex-col gap-4 text-left">
-              <div>
-                <input
-                  id="input"
-                  type="text"
-                  name=""
-                  placeholder="  Shorten a link here..."
-                  class="border-2 border-slate-300 focus:outline-none focus:border-red-600 focus:ring-1 h-14 w-full rounded-md pl-3 placeholder:text-red-600"
-                />
-                <label for="input" class="italic text-red-600"
-                  >please add link</label
-                >
-              </div>
-
-              <button
-                class="bg-Cyan h-14 w-full text-white font-bold rounded-md"
+          <div class="lg:w-[850px] lg:grid lg:grid-cols-2 lg:mt-32">
+            <div
+              class="ml-72 w-[30rem] -z-10 md:ml-96 lg:col-start-2 lg:ml-20"
+            >
+              <img  src="images/illustration-working.svg" alt="" />
+            </div>
+            <div class="lg:col-start-1 lg:row-start-1">
+              <h1
+                class="font-extrabold text-[40px] md:text-[60px] lg:text-[50px] leading-10 mt-6 md:leading-none   lg:m-0"
               >
-                Shorten It!
-              </button>
-            </form>
+                More than just<br />
+                shorter links
+              </h1>
+              
+        <p class="w-[350px] pt-4 text-GrayishViolet">
+          Build your brand’s recognition and get detailed insights on how your
+          links are performing.
+        </p>
+
+        <button
+          class="bg-Cyan text-white rounded-full font-bold px-11 py-3 mt-6"
+        >
+          Get Started
+        </button>
+            </div>
           </div>
+        
+        <div
+          class="bg-DarkViolet bg-bgmobile w-[320px] h-[200px] mx-auto p-6 rounded-md z-30 -mb-40 my-20  lg:w-[850px] lg:h-[130px] lg:-mb-24"
+        >
+          <form class="flex flex-col gap-4 text-left form lg:flex-row lg:gap-3">
+            <div class="lg:w-full">
+              <input
+                id="input"
+                type="text"
+                name=""
+                placeholder="  Shorten a link here..."
+                class="border-2 border-slate-300 focus:outline-none focus:border-red-600 focus:ring-1 h-14 w-full rounded-md pl-3 placeholder:text-red-600 "
+              />
+              
+              <label for="input" class="italic text-red-600 form-label block"
+                >please add link</label
+              >
+            </div>
+
+            <button
+              class="bg-Cyan h-14 w-full text-white font-bold rounded-md shorten-btn lg:w-40"
+            >
+              Shorten It!
+            </button>
+          </form>
         </div>
       </div>
-      <div class="bg-Gray pt-28">
-        <div class="w-[320px] h-[200px] mx-auto rounded-md bg-white my-9">
-          <div>
-            <p class="px-4 py-2">Lorem ipsum dolor sit amet consectetur.</p>
-            <hr />
-          </div>
-          <div class="px-4 py-2">
-            <p class="text-Cyan">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="bg-gray-200 pt-28 -z-10">
+      <div class="shorten-url">
+        <div
+          class="w-[320px] min-h-[180px] mx-auto rounded-md bg-white my-9 pt-3 px-4 lg:w-[850px] lg:min-h-[60px] lg:flex lg:flex-row lg:justify-between lg:items-center lg:py-4"
+        >
+          <p class="px-4 py-2 lg:p-0">${url}</p>
+          <hr />
+
+          <div class="px-4 py-2 lg:flex lg:flex-row lg:gap-3 lg:items-center lg:p-0">
+            <p class="text-Cyan">${data.result.short_link}</p>
             <button
-              class="bg-Cyan h-10 w-full text-white font-bold rounded-md mt-4"
+              class="bg-Cyan h-10 w-full text-white font-bold rounded-md mt-4 newUrl-btn lg:m-0 lg:px-8 lg:py-2"
             >
               copy
             </button>
           </div>
         </div>
-        <div
-          class="text-center flex flex-col justify-center items-center mt-24"
-        >
-          <div>
-            <h2 class="font-bold text-[28px] mb-5">Advanced Statistics</h2>
-            <p class="text-GrayishViolet mb-11 w-[350px]">
+         <div class="text-center flex flex-col justify-center items-center">
+            <h2 class="font-bold text-[28px] mb-5 text-center">Advanced Statistics</h2>
+            <p class="text-GrayishViolet mb-11 text-center w-[350px] lg:w-[500px]">
               Track how your links are performing across the web with our
               advanced statistics dashboard.
             </p>
           </div>
+          
+        <div
+          class="text-center flex flex-col justify-center items-center mt-24 lg:flex lg:flex-row lg:justify-center lg:items-center lg:mx-auto lg:mb-40"
+        >
+         <div class="lg:flex lg:flex-row">
           <div
-            class="w-20 h-20 rounded-full bg-DarkViolet flex justify-center items-center -mb-10 z-10"
+            class="w-20 h-20 rounded-full bg-DarkViolet flex justify-center items-center -mb-10 z-10 lg:z-10 lg:-mr-24 lg:-mt-11 "
           >
             <img src="images/icon-brand-recognition.svg" alt="" />
           </div>
           <div
-            class="w-[320px] h-[250px] mx-auto rounded-sm bg-white px-5 pt-5 flex flex-col items-center justify-center"
+            class="w-[320px] h-[250px] mx-auto rounded-sm bg-white px-5 pt-5 flex flex-col items-center justify-center lg:w-[280px] lg:px-2"
           >
-            <h3 class="font-bold text-[25px] mb-4">Brand Recognition</h3>
+            <h3 class="font-bold text-[25px]  mb-4">Brand Recognition</h3>
             <p class="text-GrayishViolet">
               Boost your brand recognition with each click. Generic links don’t
               mean a thing. Branded links help instil confidence in your
               content.
             </p>
-          </div>
-          <div class="h-11 w-2 bg-Cyan"></div>
+          </div></div>
+          <div class="lg:flex lg:flex-row lg:mt-14">
+          <div class="h-11 w-2 bg-Cyan lg:w-20 lg:h-2 lg:mt-8"></div>
           <div
-            class="w-20 h-20 rounded-full bg-DarkViolet flex justify-center items-center -mb-10 z-10"
+            class="w-20 h-20 rounded-full bg-DarkViolet flex justify-center items-center -mb-10 lg:z-10 lg:-mr-24 lg:-mt-11"
           >
             <img src="images/icon-detailed-records.svg" alt="" />
           </div>
           <div
-            class="w-[320px] h-[250px] mx-auto rounded-sm bg-white px-5 pt-5 flex flex-col items-center justify-center"
+            class="w-[320px] h-[250px] mx-auto rounded-sm bg-white px-5 pt-5 flex flex-col items-center justify-center lg:w-[280px] lg:px-2"
           >
             <h3 class="font-bold text-[25px] mb-4">Detailed Records</h3>
             <p class="text-GrayishViolet">
@@ -175,21 +210,23 @@
               where people engage with your content helps inform better
               decisions.
             </p>
-          </div>
-          <div class="h-11 w-2 bg-Cyan"></div>
+          </div></div>
+          <div class="lg:flex lg:flex-row lg:mt-28">
+          <div class="h-11 w-2 bg-Cyan lg:w-20 lg:h-2 lg:mt-8"></div>
           <div
-            class="w-20 h-20 rounded-full bg-DarkViolet flex justify-center items-center -mb-10 z-10"
+            class="w-20 h-20 rounded-full bg-DarkViolet flex justify-center items-center -mb-10 z-10 lg:z-10 lg:-mr-24 lg:-mt-11"
           >
             <img src="images/icon-fully-customizable.svg" alt="" />
           </div>
           <div
-            class="w-[320px] h-[250px] mx-auto rounded-sm bg-white px-5 pt-5 flex flex-col items-center justify-center mb-20"
+            class="w-[320px] h-[250px] mx-auto rounded-sm bg-white px-5 pt-5 flex flex-col items-center justify-center mb-20 lg:w-[280px] lg:px-2  lg:m-0"
           >
             <h3 class="font-bold text-[25px] mb-4">Fully Customizable</h3>
             <p class="text-GrayishViolet">
               Improve brand awareness and content discoverability through
               customizable links, supercharging audience engagement.
             </p>
+          </div>
           </div>
         </div>
       </div>
@@ -203,8 +240,9 @@
           Get Started
         </button>
       </div>
-      <footer
-        class="text-center flex flex-col items-center justify-center gap-6 py-10 text-white bg-VeryDarkViolet"
+      <footer class="bg-VeryDarkViolet">
+      <div
+        class="text-center flex flex-col items-center justify-center gap-6 py-10 text-white  lg:flex lg:flex-row lg:justify-between lg:w-[900px] lg:mx-auto lg:items-start lg:text-left"
       >
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33">
@@ -245,8 +283,8 @@
           <img src="images/icon-pinterest.svg" alt="" />
           <img src="images/icon-instagram.svg" alt="" />
         </div>
-      </footer>
-      <div class="attribution text[11px] text-center bg-DarkViolet">
+      </div>
+      <div class="attribution text-[11px] text-center bg-VeryDarkViolet">
         Challenge by
         <a
           class="text-blue-600"
@@ -255,6 +293,6 @@
           >Frontend Mentor</a
         >. Coded by <a class="text-blue-700" href="#">marv</a>.
       </div>
-    </div>
+    </div><footer>
   </body>
 </html>

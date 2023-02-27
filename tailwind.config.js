@@ -6,8 +6,8 @@ module.exports = {
       backgroundImage: {
         bgmobile: "url('/images/bg-boost-mobile.svg')",
         bgdesktop: "url('/images/bg-boost-desktop.svg')",
-        bgCtamobile:"url('/images/bg-shorten-mobile.svg)",
-        bgCtadesktop:"url('/images/bg-shorten-desktop.svg)"
+        bgCtamobile: "url('/images/bg-shorten-mobile.svg)",
+        bgCtadesktop: "url('/images/bg-shorten-desktop.svg)",
       },
       colors: {
         Cyan: "hsl(180, 66%, 49%)",
@@ -20,6 +20,11 @@ module.exports = {
       },
       fontFamily: {
         body: ["Poppins"],
+      },
+      screens: {
+        sm:"300px",
+        md: "600px",
+        lg: "900px",
       },
     },
   },

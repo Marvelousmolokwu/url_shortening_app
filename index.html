@@ -15,15 +15,7 @@
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -38,7 +30,7 @@
           <div class="flex justify-between">
             <img src="images/logo.svg" alt="logo" />
             <div
-              class="text-GrayishViolet cursor-pointer menu-bar active:text-Cyan focus:text-Cyan"
+              class="text-GrayishViolet cursor-pointer menu-bar active:text-Cyan hover:text-Cyan focus:text-Cyan"
             >
               <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
             </div>
@@ -49,25 +41,33 @@
           >
             <ul class="flex flex-col gap-6">
               <ul class="flex flex-col gap-3">
-                <li class="active:bg-Cyan rounded-full px-11 py-3">
-                  <button>Features</button>
+                <li class="">
+                  <button
+                    href="#"
+                    class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3"
+                  >
+                    Features
+                  </button>
                 </li>
-                <li
-                  class="active:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3"
-                >
-                  <button>Pricing</button>
+                <li class="">
+                  <button
+                    href="#"
+                    class="hover:bg-Cyan active:bg-Cyan rounded-full px-11 py-3"
+                  >
+                    Pricing
+                  </button>
                 </li>
-                <li class="hover:bg-Cyan rounded-full px-11 py-3">
-                  <button>Resources</button>
+                <li class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3">
+                  <button href="#">Resources</button>
                 </li>
               </ul>
               <hr />
               <ul class="flex flex-col gap-3">
                 <li class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3">
-                  <button>Login</button>
+                  <button href="#">Login</button>
                 </li>
-                <li class="active:hover:bg-Cyan rounded-full px-11 py-3">
-                  <button>Sign Up</button>
+                <li class="hover:bg-Cyan focus:bg-Cyan rounded-full px-11 py-3">
+                  <button href="#">Sign Up</button>
                 </li>
               </ul>
             </ul>
@@ -120,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-purple-100 pt-28">
+      <div class="bg-Gray pt-28">
         <div class="w-[320px] h-[200px] mx-auto rounded-md bg-white my-9">
           <div>
             <p class="px-4 py-2">Lorem ipsum dolor sit amet consectetur.</p>
@@ -140,7 +140,7 @@
         >
           <div>
             <h2 class="font-bold text-[28px] mb-5">Advanced Statistics</h2>
-            <p class="text-GrayishViolet mb-11">
+            <p class="text-GrayishViolet mb-11 w-[350px]">
               Track how your links are performing across the web with our
               advanced statistics dashboard.
             </p>
@@ -246,11 +246,14 @@
           <img src="images/icon-instagram.svg" alt="" />
         </div>
       </footer>
-      <div class="attribution">
+      <div class="attribution text[11px] text-center bg-DarkViolet">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="text-blue-600"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">marv</a>.
+        >. Coded by <a class="text-blue-700" href="#">marv</a>.
       </div>
     </div>
   </body>

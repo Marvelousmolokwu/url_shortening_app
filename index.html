@@ -47,7 +47,7 @@
                   <li class="">
                     <button
                       href="#"
-                      class="hover:bg-Cyan :active:bg-Cyan :rounded-full :w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent hover:lg:text-white active:lg:text-white lg:px-2 lg:hover:bg-Cyan lg:active:bg-Cyan lg:rounded-full lg:w-full"
+                      class="hover:bg-Cyan active:bg-Cyan rounded-full w-full py-3 md:py-0 md:hover:text-Cyan active:hover:text-Cyan md:hover:bg-transparent md:active:bg-transparent hover:lg:text-white active:lg:text-white lg:px-2 lg:hover:bg-Cyan lg:active:bg-Cyan lg:rounded-full lg:w-full"
                     >
                       Features
                     </button>
@@ -152,6 +152,22 @@
     </div>
     <div class="bg-gray-200 pt-28 -z-10">
       <div class="shorten-url">
+        <div
+          class="w-[320px] min-h-[180px] mx-auto rounded-md bg-white my-9 pt-3 px-4 lg:w-[850px] lg:min-h-[60px] lg:flex lg:flex-row lg:justify-between lg:items-center lg:py-4"
+        >
+
+                        <p class="px-4 py-2 lg:p-0 break-words">${url}</p>
+          <hr />
+
+          <div class="px-4 py-2  lg:flex lg:flex-row lg:gap-3 lg:items-center lg:p-0">
+            <p class="text-Cyan">${data.result.short_link}</p>
+            <button
+              class="bg-Cyan h-10 w-full text-white font-bold rounded-md mt-4 newUrl-btn lg:m-0 lg:px-8 lg:py-2"
+            >
+              copy
+            </button>
+          </div>
+        </div>
       </div>
          <div class="text-center flex flex-col justify-center items-center">
             <h2 class="font-bold text-[28px] mb-5 text-center">Advanced Statistics</h2>
